@@ -1,5 +1,5 @@
 /* Tell the browser to render HTML 5 elements as block */
-
+/* Basics (Tambien puedes atacar clases que sean iguales para mas de uno)*/
 header, footer, aside, nav, article {
 
 	display: block;
@@ -46,7 +46,9 @@ p {
 a {
     text-decoration: none;
 }
+/* End basics*/
 
+/* Nav */
 nav {
 
 	position: absolute;
@@ -118,3 +120,57 @@ nav ul li {
 			background: url("rss.png") left center no-repeat;
 
 		}
+
+/* Introducction */
+
+#intro {
+
+	margin-top: 66px;
+
+	padding: 44px;
+
+	background: #467612 url("intro_background.png") repeat-x;
+
+	background-size: 100%;
+
+	border-radius: 22px;
+    
+	/* Background-size not implemented yet */
+
+	-webkit-background-size: 100%;
+
+	-o-background-size: 100%;
+
+	-khtml-background-size: 100%;
+
+	/* Border-radius not implemented yet */
+
+ 	-moz-border-radius: 22px;
+
+	-webkit-border-radius: 22px;
+
+}
+
+#intro h2, #intro p{
+
+	width: 336px;
+
+}
+
+#intro h2 {
+
+	padding: 0 0 22px 0;
+
+	font-weight: normal;
+
+	color: #fff;
+
+}
+
+#intro p {
+
+	padding: 0;
+
+	color: #d9f499;
+
+}
