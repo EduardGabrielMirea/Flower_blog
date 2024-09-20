@@ -9,6 +9,8 @@ header, footer, aside, nav, article {
 body {
 
 	margin: 0 auto; /* para centrar  el contenido */
+	
+	padding: 22px 0;
 
 	width: 940px; /*  ancho del contenido dejando la diferencia a 1300px 42 a un lado 42 al otro*/
 
@@ -57,7 +59,7 @@ nav {
 
 	width: 100%;
 
-	background: url("nav_background");
+	background-color: black;
 
 }
 
@@ -117,7 +119,11 @@ nav ul li {
 
 			text-align: left;
 
-			background: url("rss.png") left center no-repeat;
+			background-image: url("../img/rss.png");
+
+			background-position: left center;
+			
+			background-repeat: no-repeat;
 
 		}
 
@@ -130,6 +136,11 @@ nav ul li {
 	padding: 44px;
 
 	background: #467612 url("intro_background.png") repeat-x;
+	/*background: #467612 url("intro_background.png") top left (287px 100%) repeat-x,
+
+	url("intro_flower.png") top right (653px 100%) no-repeat;
+	*/
+
 
 	background-size: 100%;
 
