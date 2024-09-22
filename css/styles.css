@@ -314,6 +314,25 @@ footer {
 		color: #777;
 	}
 	
+		footer div #reward{
+			display: table-cell;
+			
+		}
+			#validator{
+				display: table-cell;
+				width: 100px;
+			}
+			
+				#validator a img {
+					border:0;
+					width:88px;
+					height:31px;
+				}
+				
+			#copy{
+				width: 100px;
+			}
+			
 		footer div section {
 			display: table-cell;
 			width: 300px;
