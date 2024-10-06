@@ -3,6 +3,18 @@
 ------------------------------*/
 
 /* Makeshift CSS Reset */
+@font-face {
+	font-family: 'Qwitcher';
+	src: url(/fuentes/fuente-titulos/QwitcherGrypen-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Imbue';
+	src: url(/fuentes/fuente-cuerpo/static/Imbue_14pt-Regular.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
 * {
     margin: 0;
     padding: 0;
@@ -16,19 +28,24 @@ body {
 	margin: 0 auto; 
 	padding: 22px 0;
 	width: 940px;
-	font: 13px/22px Helvetica, Arial, sans-serif;
+	font: 13px/22px;
+	/*font: 13px/22px Helvetica, Arial, sans-serif;*/
 	background: #f0f0f0;
 
 }
 
 h1, h2 {
-    font-size: 28px;
+	font-family: 'Qwitcher';
+	font-weight: bold;
+    font-size: 50px;
     line-height: 44px;
     padding: 22px 0;
 }
 
 h3 {
-	font-size: 18px;
+	font-family: 'Qwitcher';
+	font-weight: bold;
+	font-size: 25px;
 	line-height: 22px;
 	padding: 11px 0;
 }
@@ -145,6 +162,8 @@ nav {
 }
 
 	#mainContent {
+		font-family: 'Imbue';
+		font-weight: normal;
 		display: table-cell;
 		width: 620px;
 		padding-right: 22px;
