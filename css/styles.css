@@ -63,7 +63,7 @@ nav {
 	position: absolute;
 	left: 0;
 	width: 100%;
-	background: url("../img/nav_background.png");
+	background: url("../multimedia/img/nav_background.png");
 }
 
 	nav ul {
@@ -100,7 +100,7 @@ nav {
 				margin-left: 22px;
 				padding-left: 33px;
 				text-align: left;
-				background-image: url("../img/rss.png");
+				background-image: url("../multimedia/img/rss.png");
 				background-position: left center;
 				background-repeat: no-repeat;
 			}
@@ -112,7 +112,7 @@ nav {
 	position: relative;
 	margin-top: 66px;
 	padding: 44px;
-	background: #467612 url("../img/intro_background.png") repeat-x;
+	background: #467612 url("../multimedia/img/intro_background.png") repeat-x;
 	
 
 	background-size: 100%;
@@ -172,7 +172,7 @@ nav {
 	aside {
 		display: table-cell;
 		width: 300px;
-		background: url("../img/sidebar_background.png") top left;
+		background: url("../multimedia/img/sidebar_background.png") top left;
 	}
 
 /*------------------------------
@@ -203,6 +203,29 @@ column-gap: 22px; /* Standard property */
 margin: 22px 0;
 -webkit-box-shadow: 3px 3px 7px #777; /* For older versions of Safari */
 box-shadow: 3px 3px 7px #777; /* Standard property */
+}
+
+/*------------------------------
+=VIDEO EMBED STYLING
+------------------------------*/
+
+#introVideo {
+	display: block;
+    margin: 22px auto; /* Centers the video horizontally */
+    width: 100%; /* Adjusts the width to fit the layout nicely */
+    max-width: 1800px; /* Sets a maximum width to keep the video manageable on larger screens */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 11px; /* Adds rounded corners */
+    box-shadow: 3px 3px 7px #777; /* Adds a subtle shadow to give a sense of depth */
+}
+
+/*------------------------------
+=AUDIO EMBED STYLING
+------------------------------*/
+
+#introAudio {
+    border-radius: 11px; /* Adds rounded corners for aesthetic consistency */
+    box-shadow: 3px 3px 7px #777; /* Adds a subtle shadow to give a sense of depth */
 }
 
 /*------------------------------
@@ -290,12 +313,128 @@ form {
 		}
 
 /*------------------------------
+=CONTACT FORM STYLING (Fully Responsive)
+------------------------------*/
+
+.contactForm {
+    margin: 5vw auto;
+    padding: 5vw;
+    width: 90%;
+    max-width: 600px;
+    background: #f9f9f9;
+    border-radius: 11px;
+    box-shadow: 3px 3px 7px #777;
+    font-family: 'Imbue', sans-serif;
+}
+
+.contactForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm input[type="password"],
+.contactForm input[type="date"],
+.contactForm input[type="number"],
+.contactForm input[type="color"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 3px #ccc;
+    font-size: 1em;
+}
+
+.contactForm input[type="text"][required]:invalid,
+.contactForm input[type="email"][required]:invalid,
+.contactForm input[type="password"][required]:invalid {
+    border: 2px solid #e74c3c; /* Red border for invalid fields */
+}
+
+.contactForm input[type="text"][required]:valid,
+.contactForm input[type="email"][required]:valid,
+.contactForm input[type="password"][required]:valid {
+    border: 2px solid #2ecc71; /* Green border for valid fields */
+}
+
+.contactForm input[type="submit"] {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    background: #467612;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.contactForm input[type="submit"]:hover {
+    background: #35630e;
+}
+
+/* Responsive Styles for All Screen Types */
+@media (max-width: 1024px) {
+    .contactForm {
+        padding: 4vw;
+    }
+    .contactForm label {
+        font-size: 1em;
+    }
+    .contactForm input[type="submit"] {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactForm {
+        padding: 3vw;
+    }
+    .contactForm label {
+        font-size: 0.9em;
+    }
+    .contactForm input[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactForm {
+        padding: 2vw;
+    }
+    .contactForm label {
+        font-size: 0.85em;
+    }
+    .contactForm input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+    }
+    .contactForm input[type="text"],
+    .contactForm input[type="email"],
+    .contactForm input[type="password"],
+    .contactForm input[type="date"],
+    .contactForm input[type="number"],
+    .contactForm input[type="color"] {
+        font-size: 0.9em;
+    }
+}
+
+
+/*------------------------------
 =SIDEBAR
 ------------------------------*/
 aside section {
 	margin: 22px 0 0 22px;
 	padding: 11px 22px;
-	background: url("../img/sidebar_section_background.png") repeat-x;
+	background: url("../multimedia/img/sidebar_section_background.png") repeat-x;
 	
 	-moz-border-radius: 11px; /* For older versions of Firefox */
     -webkit-border-radius: 11px; /* For older versions of Safari */
@@ -316,6 +455,27 @@ aside section {
 			aside section ul li a:hover {
 				text-decoration: underline;
 			}
+
+/*------------------------------
+=SIDEBAR Google Maps Section
+------------------------------*/
+
+#map {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#map iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+#map p {
+    margin-top: 10px;
+}
 
 /*------------------------------
 =FOOTER

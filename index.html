@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="multimedia/img/flower_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
     <title>The Flower Blog</title>
 </head>
 
@@ -20,7 +22,7 @@
             <li class="selected"><a href="#">Blog</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Archives</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li class="subscribe"><a href="#">Subscribe via. RSS</a></li>
         </ul>
     </nav>
@@ -32,7 +34,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
         </p>
-        <img src="img/intro_flower.png" alt="Flower">
+        <img src="multimedia/img/intro_flower.png" alt="Flower">
     </section>
 
     <!-- Content area -->
@@ -67,7 +69,7 @@
                         non
                         elit et elit lacinia lobortis nec a velit. Sed ac nisl sed enim consequat porttitor.
                     </p>
-                    <img src="img/flower.png" alt="Flower">
+                    <img src="multimedia/img/flower.png" alt="Flower">
                     <p>
                         Pellentesque ut sapien arcu, egestas mollis massa. Fusce lectus leo, fringilla at aliquet sit
                         amet,
@@ -106,6 +108,15 @@
                         aliquet
                         viverra.
                     </p>
+                    <video id="introVideo" controls reload="metadata" crossorigin="anonymous">
+                        <source src="multimedia/video/y2mate.com - Flowers  Video Background HD 1080p_1080.mp4" type="video/mp4">
+                        <source src="multimedia/video/y2mate.com - Flowers Video Background HD 1080p_1080.webm" type="video/webm">
+                    </video>
+                    <p>¿Por qué es importante regalar flores?</p>
+                    <audio id="introAudio" controls preload="metadata" crossorigin="anonymous">
+                        <source src="multimedia/audio/y2mate.com - Por qué es importante regalar flores.mp3" type="audio/mp3">
+                        <source src="multimedia/audio/y2mate.com - Por qué es importante regalar flores.ogg" type="audio/ogg">
+                    </audio>
                 </div>
             </article>
 
@@ -199,6 +210,12 @@
                     <li><a href="#">May 2009</a></li>
                     <li><a href="#">June 2009</a></li>
                 </ul>
+            </section>
+
+            <section>
+                <h3>Google location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019624152643!2d-122.41941648468155!3d37.7749297797586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c3e8d4b5f%3A0x7d2d37f1542334a8!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1618334728123!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                <p>Ubicación de FlowerBlog. Si no puedes ver el mapa, haz clic aquí: <a href="https://www.google.com/maps/place/San+Francisco,+CA">Visualiza este contenido.</a></p>
             </section>
         </aside>
     </div>
